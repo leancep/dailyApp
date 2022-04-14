@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'lenguaje' => 'Seleccionar Lenguage',
+    'lenguaje' => 'Select Lenguage',
     'precio' => 'Price: ',
     'ingles' => 'English',
     'español' => 'Spanish',
