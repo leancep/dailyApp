@@ -17,5 +17,8 @@ use App\Http\Controllers\Controller;
 
 Route::get('/set_language/{lang}', [Controller::class, 'set_language'])->name('set_language');
 Route::get('/', 'App\Http\Controllers\IndexController@index');
+Route::get('/mycv', function () {
+    return view('cv');
+});
 
-  
+Route::get('/download/mycv', 'App\Http\Controllers\IndexController@export')->name('export.cv');

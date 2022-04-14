@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/wallpaper.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -500,6 +500,22 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+
+/*--------------------------------------------------------------
+# btn my cv
+--------------------------------------------------------------*/
+#cv {
+  display:flex;
+  justify-content: center;
+  width: 300;
+  position: relative;
+  left: 480;
+  top: 50;
+ 
+ 
+  
 }
 
 /*--------------------------------------------------------------

@@ -1,7 +1,8 @@
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
   <title> Leandro Cepeda </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -69,7 +70,7 @@
                 
                     
                 </div> -->
-          <!-- <li><a class="nav-link btn-get-started" href="#hero">MI CV</a></li> -->
+          <li><a class="nav-link btn-get-started" href="/mycv">My CV Online</a></li>
           <!--<li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
@@ -101,7 +102,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="apps-info">
               <h3>{{ trans('messages.dolarHoy') }}</h3>
               <p>
@@ -129,7 +130,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="apps-info">
               <h3>{{ trans('messages.CriptoHoy') }}</h3>
               <p>
@@ -159,12 +160,13 @@
               
             </div>
           </div>
+        </div>
 
           
-
+        
          
 
-
+        <!-- <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="apps-info">
               <h3>Feriados Argentina!</h3>
@@ -184,7 +186,7 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
       </div>
     </div>
 

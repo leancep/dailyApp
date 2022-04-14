@@ -25,19 +25,12 @@ class IndexController extends Controller
         $client = new Client();
         $response = $client->get('https://www.dolarsi.com/api/api.php?type=valoresprincipales');
         $dolares = json_decode($response->getBody());
-
         return $dolares;
     }
     public function cripto(){
 
         $client = new Client();
 
-        // $response = $client->request('GET', 'http://rest.coinapi.io/v1/exchanges', [
-        //     'headers' => [
-        //         'Accept'     => 'application/json',
-        //         'X-CoinAPI-Key'      => '1692236E-3AFF-4F4B-ABA9-141C28715A2D'
-        //     ]
-        // ]);
         $response = $client->get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum%2Ccardano&order=market_cap_desc&per_page=100&page=1&sparkline=false');
 
         $cripto = json_decode($response->getBody());
@@ -53,5 +46,10 @@ class IndexController extends Controller
         $feriados = json_decode($response->getBody());
         return $feriados;
         
+    }
+
+    public function export(){
+        $file = public_path("exports/LeandroCepeda.pdf");
+        return response()->download($file);
     }
 }
